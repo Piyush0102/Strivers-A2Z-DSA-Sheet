@@ -1,0 +1,35 @@
+#Linear Search
+
+def linear_search(arr, key, N):
+    for i in range(0, N):
+        if(arr[i]==key):
+            return i
+    return -1    
+
+if __name__=="__main__":
+    arr=[]
+    n=int(input("Enter the number of elements : "))
+    for i in range(0, n):
+        ele=int(input())
+        arr.append(ele)
+    print(arr)    
+    
+    key=int(input("Enter the element to be searched : "))
+    N=len(arr)
+    
+    result=linear_search(arr, key, N)
+    if(key==-1):
+        print("Element not found")
+    else:
+        print("Element found at index", result)
+
+OUTPUT:
+Enter the number of elements : 5
+2
+4
+6
+8
+10
+[2, 4, 6, 8, 10]
+Enter the element to be searched : 8
+Element found at index 3
