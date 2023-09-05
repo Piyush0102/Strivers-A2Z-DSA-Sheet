@@ -1,0 +1,15 @@
+#Write a program that takes character as an input and prints:
+#1 if the character is an upper case
+#0 if the character is an lower case
+#-1 if the character is not an alphabet
+
+def main():
+    char = input()
+    if char.isupper():
+        print(1)
+    elif char.islower():
+        print(0)
+    else:
+        print(-1)
+if __name__ =="__main__":
+    main()
