@@ -1,0 +1,18 @@
+#Palindrome
+def isPalindrome(s):
+    return s == s[::-1]
+
+s = input("Enter the string you want to check for palindrome : ")
+ans = isPalindrome(s)
+
+if ans:
+    print("Yes, it is a palindrome")
+else:
+    print("No, it is not a palindrome")
+
+OUTPUT:
+Enter the string you want to check for palindrome :  malayalam
+Yes, it is a palindrome
+
+Enter the string you want to check for palindrome :  soon
+No, it is not a palindrome
