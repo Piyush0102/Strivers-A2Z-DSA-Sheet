@@ -1,0 +1,13 @@
+#String Reversal
+def reverse(s):
+    str = ""
+    for i in s:
+        str = i+str
+    return str
+
+s = input("The orginal string is : ")
+print("The reversed string is : ", reverse(s))
+
+OUTPUT:
+The orginal string is :  piyush
+The reversed string is :  hsuyip
